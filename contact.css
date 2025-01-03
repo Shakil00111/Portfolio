@@ -1,0 +1,201 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  width: 80%;
+  height: 50px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 10%;
+}
+
+.navigator {
+  display: flex;
+  gap: 15px;
+}
+
+.navigator a {
+  font-size: 20px;
+  color: gray;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.navigator a:hover {
+  color: orange;
+}
+
+.button {
+  background-color: rgb(18, 17, 17);
+  border: none;
+  font-size: 22px;
+  color: white;
+  border-radius: 30px;
+  width: 200px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 2s;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 2s;
+}
+
+.contact_main {
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  transition: transform 2s;
+}
+
+.contact, .message {
+  border-radius: 30px;
+  padding: 20px;
+  transition: transform 0.5s;
+}
+
+.contact {
+  width: 33%;
+  background-color: rgb(4, 81, 246);
+  color: white;
+}
+
+.si {
+  margin-top: 50px;
+}
+
+.message {
+  width: 63%;
+  background-color: rgb(27, 25, 25);
+  color: white;
+}
+
+.contact div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 12px;
+}
+
+.message_p {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.field, .message_field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  border: none;
+  border-radius: 12px;
+}
+
+.message_field {
+  height: 150px;
+  resize: none;
+}
+
+.submit {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  margin-top: 25px;
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  height: 200px;
+  background-color: black;
+  gap: 15px;
+}
+
+.fnavigator {
+  font-size: 20px;
+  color: gray;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+footer .fnavigator a {
+  text-decoration: none;
+  color: gray;
+  margin: 0 5px;
+}
+
+.fnavigator a:hover {
+  color: orange;
+  transition: 1s;
+}
+
+@media (max-width: 720px) {
+  .nav {
+      width: 90%;
+      height: 40px;
+  }
+
+  .navigator {
+      font-size: 16px;
+  }
+
+  .button {
+      font-size: 15px;
+      width: 70%;
+  }
+
+  .contact_main {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact, .message {
+      width: 90%;
+      margin-top: 20px;
+  }
+}

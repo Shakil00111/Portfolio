@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="main">
+        <!-- Navigation Bar -->
+        <div class="nav">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./Image/logo.png" alt="Logo" height="50px" width="50px">
+                </a>
+            </div>
+            
+            <nav class="navigator">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./works.html">Works</a>
+                <a href="./contact.html" aria-current="page">
+                    <span style="color: white;">Contact</span>
+                </a>
+            </nav>
+    
+            <div class="button" onclick="window.location.href='./contact.html'">
+                <div>Let's talk</div>
+            </div>
+        </div>
+
+        <div class="contact_main">
+            <section class="contact">
+                <h2>Contact Info</h2>
+                <div>
+                    <img src="./Image/email.png" alt="Email Icon" height="18px" width="26px">
+                    <p>Shakil114549@gmail.com</p>
+                </div>
+                <div>
+                    <img src="./Image/phone.png" alt="Phone Icon" height="26px" width="26px">
+                    <p>+880 1308060630</p>
+                </div>
+                <div>
+                    <img src="./Image/location.png" alt="Location Icon" height="26px" width="26px">
+                    <p>Rajshahi, BD</p>
+                </div>
+                <h2 class="si">Social Info</h2>
+                <div>
+                    <img src="./Image/in.png" alt="LinkedIn Icon" height="50px" width="50px">
+                </div>
+            </section>
+
+            <section class="message">
+                <h2 class="message_p">Let's work <span style="color: blue;">together.</span></h2>
+                <form action="" method="post">
+                    <label for="name">Name*</label>
+                    <input id="name" class="field" type="text" name="name" placeholder="Your Name" required>
+                    
+                    <label for="email">Email*</label>
+                    <input id="email" class="field" type="email" name="email" placeholder="Your Email" required>
+                    
+                    <label for="sub">Subject</label>
+                    <input id="sub" class="field" type="text" name="sub" placeholder="Your Subject">
+                    
+                    <label for="message">Message*</label>
+                    <textarea id="message" class="message_field" name="text" placeholder="Your Message" required></textarea>
+                    
+                    <input class="submit" type="submit" name="submit" value="Send Message">
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <a href="./index.html">
+                <img src="./Image/logo.png" alt="Logo" height="60px" width="40px">
+            </a>
+        </div>
+        
+        <div class="fnavigator">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./works.html">Works</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+  
+        <p>&copy; All rights reserved by <span style="color: rgb(86, 86, 229)">Shakil</span></p>
+    </footer>
+</body>
+</html>
